@@ -73,22 +73,20 @@ export default class 翻譯結果 extends React.Component {
         );
     }
 
-    debug(查詢結果.綜合標音);
     let 綜合標音 = 查詢結果.綜合標音.map(
       (綜音, i)=>(
-        <div key={i}>{Object.keys(綜音).map(
-          (b, j)=>(<div key={j}>{b}:{綜音[b]}<br/></div>)
-        )}</div>
+        <div key={i}>
+          <div>{綜音['漢字']}<br/></div>
+          <div>{綜音['臺羅閏號調']}<br/></div>
+        </div>
       )
     );
     return (
         <div className='main container'>
           <h3>結果：</h3>
           <div id='輸出'>
-            {查詢結果.翻譯正規化結果}
-            {this.顯示合成結果(查詢結果)}
-            <br/>
             {綜合標音}
+            {this.顯示合成結果(查詢結果)}
           </div>
         </div>
       );
