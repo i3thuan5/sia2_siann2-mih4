@@ -18,11 +18,7 @@
 下指令`npm run deploy`
 
 
-## 相關專案
-[臺灣言語服務](https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_hok8-bu7)的前端範例。
-
-使用[臺灣言語工具](https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_kang1-ku7)，做好翻譯、語音合成等自動化模型訓練。
-
+## 相關連結
 * 後端專案
   * [臺灣言語服務](https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_hok8-bu7)
 * API介面
