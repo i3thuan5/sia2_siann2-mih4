@@ -6,9 +6,9 @@ var debug = Debug('ing7:網站');
 
 export default class 網站 extends React.Component {
 
-  跳到腔口語句 (腔口, 語句) {
+  跳到腔口語句 (語句) {
     //'%E8%AC%9B' == '講'
-    this.props.history.replace('/%E8%AC%9B/' + 腔口 + '/' + 語句);
+    this.props.history.replace('/%E8%AC%9B/' +  語句);
   }
 
   render () {
