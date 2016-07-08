@@ -19,7 +19,7 @@ export default class 查 extends React.Component {
   跳到語句 (textarea) {
     let 語句 = textarea.target.value;
     this.setState({ 語句 });
-    this.props.跳到腔口語句(語句);
+    this.props.跳到語句(語句);
   }
 
   render () {
