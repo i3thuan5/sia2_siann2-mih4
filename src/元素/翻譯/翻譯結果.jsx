@@ -74,12 +74,18 @@ export default class 翻譯結果 extends React.Component {
     }
 
     let 綜合標音 = 查詢結果.綜合標音.map(
-      (綜音, i)=>(
-        <div key={i}>
-          <div>{綜音['漢字']}<br/></div>
-          <div>{綜音['臺羅閏號調']}<br/></div>
-        </div>
-      )
+      (綜音, i)=> {
+        let 漢字陣列 = 綜音.漢字.split(' ');
+        let 臺羅陣列 = 綜音.臺羅閏號調.split(' ');
+        let 標音 = 漢字陣列.map(
+          (漢字, 第幾个)=>(<ruby key={第幾个}>{漢字}<rt>{臺羅陣列[第幾个]}</rt></ruby>)
+        );
+        return (
+          <div key={i}>
+            {標音}
+          </div>
+        );
+      }
     );
     return (
         <div className='main container'>

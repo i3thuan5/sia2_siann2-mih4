@@ -17,7 +17,6 @@ export default class 合成結果 extends React.Component {
   render () {
     return (
         <div className='main container'>
-        <h3>合成結果：</h3>
         <audio controls autoPlay id="合成音檔">
           <source type="audio/wav"
              src={this.props.後端網址
