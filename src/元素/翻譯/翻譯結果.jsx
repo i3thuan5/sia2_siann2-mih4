@@ -32,7 +32,7 @@ export default class 翻譯結果 extends React.Component {
         .query({
             '查詢腔口': 腔口,
             '查詢語句': 語句,
-        })
+          })
         .then(({ body }) => (this.setState({
           查詢結果:  {
             '查詢語句': 語句,
@@ -49,7 +49,7 @@ export default class 翻譯結果 extends React.Component {
             '內容': err,
           },
           頂一句語句: 語句,
-      })));
+        })));
     }
   }
 
