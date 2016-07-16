@@ -19,6 +19,7 @@ render(
           //'%E8%AC%9B' == '講'
               <Route path='%E8%AC%9B(/:ku)' component={查}/>
               <Route path='%E8%AC%9B' component={查}/>
+              <Route path='**/:ku' component={查}/>
           </Route>
       </Router>,
       root
