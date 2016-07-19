@@ -1,6 +1,6 @@
 import React from 'react';
-import 頁頭 from '../元素/導覽/頁頭';
-import 頁尾 from '../元素/導覽/頁尾';
+import 頁頭 from './頁頭';
+import 頁尾 from './頁尾';
 
 import Debug from 'debug';
 var debug = Debug('sia2:網站');
