@@ -67,7 +67,7 @@ export default class 翻譯結果 extends React.Component {
     if (!查詢結果)
     {
       return (
-        <div className='main container'>
+        <div className='main'>
           <h3>載入中……</h3>
         </div>
       );
@@ -88,7 +88,7 @@ export default class 翻譯結果 extends React.Component {
       }
     );
     return (
-        <div className='main container'>
+        <div className='main'>
           <div id='輸出'>
             {this.顯示合成結果(查詢結果)}
             {綜合標音}
