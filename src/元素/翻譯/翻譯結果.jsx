@@ -91,12 +91,14 @@ export default class 翻譯結果 extends React.Component {
     return (
         <div className='main'>
           <div id='輸出'>
+          <p>
             <合成結果 後端網址={this.props.後端網址}
               腔口={this.props.腔口}
               語句={查詢結果.翻譯正規化結果}
               字='全部播放'
               色='red'
               />
+          </p>
             {綜合標音}
           </div>
         </div>
