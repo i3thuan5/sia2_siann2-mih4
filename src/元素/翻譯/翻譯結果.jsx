@@ -53,12 +53,12 @@ export default class 翻譯結果 extends React.Component {
     }
   }
 
-  顯示合成結果(查詢結果)
+  顯示合成結果(翻譯正規化結果)
   {
     return (
       <合成結果 後端網址={this.props.後端網址}
         腔口={this.props.腔口}
-        語句={查詢結果.翻譯正規化結果}/>
+        語句={翻譯正規化結果}/>
     );
   }
 
@@ -82,6 +82,7 @@ export default class 翻譯結果 extends React.Component {
         );
         return (
           <div key={i}>
+            {this.顯示合成結果(綜音.分詞)}
             {標音}
           </div>
         );
@@ -90,7 +91,12 @@ export default class 翻譯結果 extends React.Component {
     return (
         <div className='main'>
           <div id='輸出'>
-            {this.顯示合成結果(查詢結果)}
+            <合成結果 後端網址={this.props.後端網址}
+              腔口={this.props.腔口}
+              語句={查詢結果.翻譯正規化結果}
+              字='全部播放'
+              色='red'
+              />
             {綜合標音}
           </div>
         </div>
