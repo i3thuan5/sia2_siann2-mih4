@@ -18,6 +18,7 @@ export default class 查 extends React.Component {
   }
 
   跳到語句 (e) {
+    e.preventDefault();
     let 語句 = this.refText.value;
     this.setState({ 語句 });
     this.props.跳到語句(語句);
