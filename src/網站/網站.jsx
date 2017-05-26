@@ -1,7 +1,7 @@
 import React from 'react';
+import {Layout} from 'demo-ui';
 import 頁頭 from './頁頭';
 import 頁尾 from './頁尾';
-
 import Debug from 'debug';
 var debug = Debug('sia2:網站');
 
@@ -14,7 +14,7 @@ export default class 網站 extends React.Component {
 
   render () {
     return (
-        <div className='app background'>
+        <Layout>
           <頁頭/>
           {
             React.cloneElement(
@@ -26,7 +26,7 @@ export default class 網站 extends React.Component {
             )
           }
           <頁尾/>
-        </div>
+        </Layout>
       );
   }
 }
