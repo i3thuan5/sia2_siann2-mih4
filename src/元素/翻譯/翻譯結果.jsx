@@ -97,7 +97,7 @@ export default class 翻譯結果 extends React.Component {
     let 複製內容 = {};
     複製內容 = 計算複製內容(查詢結果.綜合標音);
     複製內容.分詞 = 查詢結果.分詞;
-    
+
     const 複製鈕群 = [];
     Object.keys(複製內容).forEach((key) => {
       複製鈕群.push(
@@ -134,6 +134,7 @@ export default class 翻譯結果 extends React.Component {
         </div>
       );
     }
+
     const 複製鈕群 = this.取得複製鈕群();
     const 整段區 = this.取得整段鈕();
     const 綜合標音 = this.綜合標音();

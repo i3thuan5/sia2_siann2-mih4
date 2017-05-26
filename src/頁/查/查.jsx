@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainSection} from 'demo-ui';
+import { MainSection } from 'demo-ui';
 import superagent from 'superagent-bluebird-promise';
 import Debug from 'debug';
 import 翻譯結果 from '../../元素/翻譯/翻譯結果';
@@ -31,6 +31,7 @@ export default class 查 extends React.Component {
           onSubmit={this.跳到語句.bind(this)}>
           <textarea defaultValue={語句}
             ref={(c) => { this.refText = c; }}
+
             rows='3'/>
           <div className='app clearing'>
           <button type='submit'
