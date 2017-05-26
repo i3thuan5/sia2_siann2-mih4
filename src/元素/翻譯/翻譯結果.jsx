@@ -6,6 +6,7 @@ import {
   ButtonStack,
   CopyButton,
   DownloadButton,
+  PlayButton,
   HanLoTsua,
   意傳服務
 } from 'demo-ui';
@@ -106,15 +107,20 @@ export default class 翻譯結果 extends React.Component {
     return 複製鈕群;
   }
 
-  取得整段下載鈕() {
+  取得整段鈕() {
     const { 腔口 } = this.props;
     const { 查詢結果 } = this.state;
     const 分詞 = 查詢結果.分詞;
     const src = 意傳服務.語音合成({ 腔口, 分詞 });
     return (
-      <DownloadButton src={src}>
-        整段下載
-      </DownloadButton>
+      <Block>
+        <DownloadButton src={src}>
+          整段下載
+        </DownloadButton>
+         <PlayButton src={src}>
+          整段播放
+        </PlayButton>
+      </Block>
     );
   }
 
@@ -128,23 +134,16 @@ export default class 翻譯結果 extends React.Component {
         </div>
       );
     }
-    const 綜合標音 = this.綜合標音();
     const 複製鈕群 = this.取得複製鈕群();
-    const 整段下載鈕 = this.取得整段下載鈕();
+    const 整段區 = this.取得整段鈕();
+    const 綜合標音 = this.綜合標音();
     return (
         <div>
           <ButtonStack>
             {複製鈕群}
           </ButtonStack>
-          <Block>
-            {整段下載鈕}
-            <合成結果 後端網址={this.props.後端網址}
-              腔口={this.props.腔口}
-              語句={查詢結果.分詞}
-              字='全部播放'
-              色='red'/>
-          </Block>
-            {綜合標音}
+          {整段區}
+          {綜合標音}
         </div>
       );
   }
