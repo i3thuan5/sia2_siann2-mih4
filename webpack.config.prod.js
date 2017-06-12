@@ -30,6 +30,9 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
+    alias: {
+      tensuConfig: path.join(path.resolve(), "taupahji.config.js"),
+    },
   },
   module: {
     loaders: [{
