@@ -49,12 +49,5 @@
             "jsx":"never", 
             "json":"never"
         }]
-    },
-    "settings": {
-        "import/resolver": {
-            "webpack": {
-                "config": "./webpack.config.dev.js"
-            }
-        }
     }
 }
