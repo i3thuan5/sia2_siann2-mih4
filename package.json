@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/sih4sing5hong5/sia2_siann2-mih4",
   "dependencies": {
-    "demo-ui": "^1.12.6"
+    "ten1su4": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",

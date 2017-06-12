@@ -16,9 +16,15 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new webpack.ProvidePlugin({
+      tensuConfig: "tensuConfig",
+    }),
   ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
+    alias: {
+      tensuConfig: path.join(path.resolve(), "taupahji.config.js"),
+    },
   },
   module: {
     loaders: [{
