@@ -14,6 +14,9 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.ProvidePlugin({
+      tensuConfig: "tensuConfig",
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
@@ -27,6 +30,9 @@ module.exports = {
   ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
+    alias: {
+      tensuConfig: path.join(path.resolve(), "taupahji.config.js"),
+    },
   },
   module: {
     loaders: [{
