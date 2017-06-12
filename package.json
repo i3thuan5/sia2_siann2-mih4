@@ -1,6 +1,6 @@
 {
   "name": "sia2_siann2-mih4",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "寫啥物",
   "scripts": {
     "start": "node devServer.js",
