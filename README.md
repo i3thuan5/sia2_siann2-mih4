@@ -1,4 +1,4 @@
-# 寫啥物 - 臺語翻譯發音
+# 寫啥物 - 台語翻譯發音
 [![Build Status](https://travis-ci.org/sih4sing5hong5/sia2_siann2-mih4.svg?branch=master)](https://travis-ci.org/sih4sing5hong5/sia2_siann2-mih4)
 [![devDependency Status](https://david-dm.org/sih4sing5hong5/sia2_siann2-mih4/dev-status.svg)](https://david-dm.org/sih4sing5hong5/sia2_siann2-mih4#info=devDependencies)
 
