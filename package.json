@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sih4sing5hong5/sia2_siann2-mih4.git"
+    "url": "https://github.com/i3thuan5/sia2_siann2-mih4.git"
   },
   "keywords": [
     "臺語",
@@ -20,13 +20,13 @@
   "author": "薛丞宏",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sih4sing5hong5/sia2_siann2-mih4/issues"
+    "url": "https://github.com/i3thuan5/sia2_siann2-mih4/issues"
   },
-  "homepage": "https://github.com/sih4sing5hong5/sia2_siann2-mih4",
+  "homepage": "https://github.com/i3thuan5/sia2_siann2-mih4",
   "dependencies": {
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
-    "ten1su4": "^1.0.1"
+    "ten1su4": "^1.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
