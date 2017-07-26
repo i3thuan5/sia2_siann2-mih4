@@ -12,3 +12,14 @@ branches:
 script:
 - echo npm run $TSI2_LING7
 - npm run $TSI2_LING7
+before_deploy:
+- npm run build
+deploy:
+  provider: pages
+  fqdn: xn--7zrr5mu7u.xn--v0qr21b.xn--kpry57d
+  skip_cleanup: true
+  local_dir: build/
+  github_token:
+    secure: fE08FZ0FnlhhtbprBMYSkZ223xVnXW7to2+zirW82hy3U0YTL7JNpXm+GJnvlLyYTNvyyqdfq66k31BcN1dPRD/NQD8LXquvgtz2WLL6jPVvVVyfTvWIAis83JqVLTdIHI41qimgXnUH9RsQZVHkn3dL9oN86Jtfbn5cTUwt5CTZB/sUTYcCt5TFK3Qy24kM1dsGIfbXhDmpplViJLWmiVdVe8Oc4qNQ2+kFXiFZiZl0sDQx9u+Nfb6XdA0RDwhMuy1j1QE4504V0GmWfN5P0lJs2uOk5z6sKyArK74lWUU/+FMv7P26phgN14+vvvLnACsnrD+eGQBs5z5eB6hwRQHMRsyzoSptW2b8+0k5mvGeCn9by+DHXTa4sLIji2Lyd+foWL2J8JsgpWlTUSb+W7+2x16VMNhTzt3XignCAKiSIAWae68whWfRa5LDU3ZqgwUX5NI1ZEIEjfcCwE/C6Iv374CR4fdAsIlTrlxYa+53+SJtkgS3YrQFn34ohWBS2u39Nc22iZs3vG3IZ8QeN2opFdvqhfy2hZPBpODIDStoHA2nObWuuQxgWFEuAMYi3dF/J2j1tnZsCZ2lAzdoK8jmngoIVlVHt5vfXv0TkmjiWzxHqSHUZeNGHDClWlmWvBsD4e9mjw2V9dgcPzASI0hqh98X8ii58BBH6379AuM=
+  on:
+    branch: master
