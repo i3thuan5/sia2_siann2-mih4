@@ -1,6 +1,6 @@
 # 寫啥物 - 台語翻譯發音
-[![Build Status](https://travis-ci.org/sih4sing5hong5/sia2_siann2-mih4.svg?branch=master)](https://travis-ci.org/sih4sing5hong5/sia2_siann2-mih4)
-[![devDependency Status](https://david-dm.org/sih4sing5hong5/sia2_siann2-mih4/dev-status.svg)](https://david-dm.org/sih4sing5hong5/sia2_siann2-mih4#info=devDependencies)
+[![Build Status](https://travis-ci.org/i3thuan5/sia2_siann2-mih4.svg?branch=master)](https://travis-ci.org/i3thuan5/sia2_siann2-mih4)
+[![devDependency Status](https://david-dm.org/i3thuan5/sia2_siann2-mih4/dev-status.svg)](https://david-dm.org/i3thuan5/sia2_siann2-mih4#info=devDependencies)
 
 [寫啥物](http://xn--7zrr5mu7u.xn--v0qr21b.xn--kpry57d)提供使用者臺語翻譯和語音朗讀。
 
